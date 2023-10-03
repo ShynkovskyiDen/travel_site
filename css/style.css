@@ -7,7 +7,8 @@
 .page__main,
 .country__info,
 .text__block,
-.nav__form {
+.nav__form,
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,10 +77,10 @@
     color: #e8a02d;
 }
 /* 21 */
-.submenu__item a:hover {
+.submenu__item a:hover,
+.nav__button:hover {
     font-weight: 700;
 }
-/* Основний контент */
 /* 10 */
 .main {
     flex-direction: column;
@@ -122,10 +123,6 @@
     background-color: #ff8800;
     color: #ffffff; 
 }
-/* 20 */
-.nav__button:hover {
-    font-weight: 700;
-}
 /* 10 */
 .country__block {
     display: flex;
@@ -138,8 +135,7 @@
     flex-direction: column;
     border: 2px solid #ff8800;
     border-radius: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(../img/travel2.jpg) center no-repeat;
     margin: 10px;
     width: 31.6%;
     background-size: 100%;
@@ -160,7 +156,8 @@
     border-radius: 10px;
 }
 /* 20 */
-.country__link:hover {
+.country__link:hover,
+.footer__link:hover {
     cursor: pointer;
     color: #ff8800;
     text-decoration: underline;
@@ -172,45 +169,18 @@
     transition: all 1s;
 }
 /* 10 */
-.country_1 {
-    background-image: url(../img/germany.jpg);
-}
-/* 10 */
-.country_2 {
-    background-image: url(../img/italy.jpg); 
-}
-/* 10 */
-.country_3 { 
-    background-image: url(../img/spain.jpg); 
-}
-.country_4 {
-    background-image: url(../img/France.jpg); 
-}
-/* 10 */
-.country_5 {
-    background-image: url(../img/uk.jpg);  
-}
-/* 10 */
-.country_6 {
-    background-image: url(../img/greece.jpg);  
-}
-/* 10 */
 .footer {
-    display: flex;
     z-index: 999;
-    justify-content: space-around;
-    flex-direction: row;
     background-color: rgb(18, 13, 73);
     color: #ffffff;
     margin-top: 70px;
 }
 /* 10 */
-.country__footer,
-.travel__footer {
+.country__footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 40px;
+    margin: 30px;
 }
 /* 10 */
 .footer__heading {
@@ -226,13 +196,7 @@
     padding: 5px 0;
     text-decoration: none;
 }
-/* 20 */
-.footer__link:hover {
-    color: #cb7c22;
-    text-decoration: underline;
-}
-/* Сторінки */
-/* 10,11 */
+/* 10 */
 .page__main,
 .country__flag img,
 .photo__block {
